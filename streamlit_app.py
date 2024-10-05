@@ -38,7 +38,7 @@ import plotly.express as px
 df = px.data.gapminder().query("year == 2007")
 df
 
-fig1 = px.line(data_canada, x = 'year', y = 'lifeExp' ,
+fig1 = px.line(df, x = 'year', y = 'lifeExp' ,
               title = 'Life expectacy in Canada')
 st.plotly_chart(fig1)
 
