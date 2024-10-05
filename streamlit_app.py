@@ -35,16 +35,14 @@ result = expensive_computataion(x)
 
 
 import plotly.express as px
-df = px.data.gapminder().query("country == Canada")
-df
+data_canada = px.data.gapminder().query("country == 'Canada'")
+data_canada
 
-fig1 = px.line(df, x = 'year', y = 'lifeExp' ,
+fig1 = px.line(data_canada, x = 'year', y = 'lifeExp' ,
               title = 'Life expectacy in Canada')
 st.plotly_chart(fig1)
 
 
-data_canada = px.data.gapminder().query("country == 'Canada'")
-data_canada
 
 fig = px.bar(data_canada, x='year' , y='pop')
 st.plotly_chart(fig)
