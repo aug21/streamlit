@@ -38,7 +38,7 @@ import plotly.express as px
 df = px.data.gapminder().query("year == 2007")
 df
 
-fig1 = px.treemap(df1, path=[px.Constant('World'), 'continent','country'], values = 'pop' , color = 'lifeExp')
+fig1 = px.treemap(df, path=[px.Constant('World'), 'continent','country'], values = 'pop' , color = 'lifeExp')
 st.plotly_chart(fig1)
 
 
