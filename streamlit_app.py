@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt # 시각화 라이브러리
 st.title('Streamlit for sin and cos function visualizaion')
 
 x_start = st.slider('x 시작 값', 0.0, 10.0, 0.0)
-x_end = st.slider('x 시작 값', 10.0, 20.0, 10.0)
+x_end = st.slider('x 끝 값', 10.0, 20.0, 10.0)
 
 x = np.linspace(x_start, x_end)
 
