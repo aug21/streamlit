@@ -35,8 +35,8 @@ result = expensive_computataion(x)
 
 
 import plotly.express as px
-fig = px.imshow([[1,23,49],[123,5,4],[45,6,3]])
-fig.show()
+fig2 = px.imshow([[1,23,49],[123,5,4],[45,6,3]])
+st.plotly_chart(fig2)
 
 
 
