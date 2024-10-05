@@ -36,7 +36,12 @@ result = expensive_computataion(x)
 
 import plotly.express as px
 df = px.data.gapminder().query("year == 2007")
-df
+fig1 = px.treemap(df1, path=[px.Constant('World'), 'continent','country'], values = 'pop' , color = 'lifeExp')
+st.plotly_chart(fig1)
+
 
 data_canada = px.data.gapminder().query("country == 'Canada'")
 data_canada
+
+fig = px.bar(data_canada, x='year' , y='pop')
+st.plotly_chart(fig)
