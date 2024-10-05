@@ -32,3 +32,11 @@ def expensive_computataion(x):
     return np.sin(x) + np.cos(x)
 
 result = expensive_computataion(x)
+
+
+import plotly.express as px
+df = px.data.gapminder().query("year == 2007")
+df
+
+data_canada = px.data.gapminder().query("country == 'Canada'")
+data_canada
