@@ -1,4 +1,3 @@
-#
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -26,3 +25,10 @@ ax.set_ylabel('X-axis')
 ax.set_title('sin and cos function')
 
 st.pyplot(fig)
+
+
+@st.cache
+def expensive_computataion(x):
+    return np.sin(x) + np.cos(x)
+
+result = expensive_computataion(x)
