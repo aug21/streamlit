@@ -35,7 +35,7 @@ result = expensive_computataion(x)
 
 
 import plotly.express as px
-df = px.data.gapminder().query("year == 2007")
+df = px.data.gapminder().query("country == Canada")
 df
 
 fig1 = px.line(df, x = 'year', y = 'lifeExp' ,
